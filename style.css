@@ -3,4 +3,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* regole sezione centrale */
+section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* regole menu sinistra Spotify */
+.menu {
+  position: fixed;
+  background-color: #000000;
+  width: 15%;
+  height: calc(100vh - 120px);
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
+
+.logo img {
+  width: 15%;
+  filter: invert(100%);
+}
+
+.logo span {
+  align-self: center;
+  font-size: 22px;
+  color: white;
+  padding: 0 5px;
+}
+
+.home {
+  padding: 0 0 30px 0;
+}
+
+.list {
+  padding-bottom: 5px;
+}
+
+.home a {
+  color: #a3a3a3;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.home img {
+  width: 12%;
+}
+
+/* regole playlist */
+.playlist {
+  color: #a3a3a3;
+}
+
+
+/* regole blocco centrale */
+.section-center {
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+  background-color: #141922;
+  height: calc(100vh - 120px);
+  width: 100%;
+}
+
+
+/* regole Upgrade */
+.upgrade {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: #080b12;
+  opacity: 0.6;
+  height: 100px;
+  width: calc(100% - 15%);
+  padding-right: 5px;
+}
+
+.button {
+  align-self: center;
+}
+
+.button h5 {
+  color: white;
+  border: 1px solid #a3a3a3;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+
+/* regole sezione player */
+footer {
+  display: flex;
+  background-color: #282828;
+  height: 120px;
 }
