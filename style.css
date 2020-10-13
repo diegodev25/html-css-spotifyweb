@@ -10,6 +10,12 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
 
 /* regole sezione centrale */
 section {
@@ -20,6 +26,7 @@ section {
 
 /* regole menu sinistra Spotify */
 .menu {
+  position: relative;
   position: fixed;
   background-color: #000000;
   width: 15%;
@@ -63,10 +70,61 @@ section {
   width: 12%;
 }
 
+
 /* regole playlist */
 .playlist {
   color: #a3a3a3;
+  overflow: auto;
 }
+
+.playlist h4 {
+  padding-bottom: 5px;
+}
+
+.playlist h4:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+
+/* regole app e autore del brano */
+.app-artista {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.download {
+  border-bottom: 1px solid #a3a3a3;
+  padding-bottom: 10px;
+}
+
+.artist {
+  padding: 10px 0;
+
+}
+
+
+.download img {
+  width: 25%;
+}
+
+.download h5 {
+  display: inline-block;
+  font-size: 16px;
+  color: #a3a3a3;
+}
+
+.artist img {
+  width: 20%;
+}
+
+.artist h5 {
+  display: inline-block;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+
 
 
 /* regole blocco centrale */
