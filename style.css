@@ -28,10 +28,10 @@ section {
 .menu {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   justify-content: space-between;
+  flex-shrink: 0;
   background-color: #000000;
-  width: 250px;
+  width: 220px;
   height: calc(100vh - 120px);
   padding: 20px 20px 5px 20px;
 }
@@ -126,7 +126,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-grow: 5;
+  flex-grow: 6;
   overflow: auto;
   background-color: #141922;
   height: calc(100vh - 120px);
@@ -143,8 +143,8 @@ section {
   background-color: #080b12;
   opacity: 0.6;
   height: 100px;
-  width: calc(100% - 250px);
-  padding:0 5px;
+  width: calc(100% - 220px);
+  padding-right: 5px;
 }
 
 .button {
@@ -162,8 +162,6 @@ section {
 /* regole menu navbar */
 .navbar {
   display: flex;
-  justify-content: flex-start;
-  height: 600px;
   border: 1px solid white;
 }
 
@@ -171,7 +169,8 @@ section {
   display: flex;
   flex-grow: 5;
   justify-content: center;
-  align-self: flex-end;
+  height: 210px;
+  align-items: flex-end;
   padding-bottom: 50px;
   border-bottom: 1px solid white;
 
@@ -207,7 +206,6 @@ section {
 }
 
 .album {
-  /* width: 220px; */
   height: auto;
   border: 1px solid white;
 }
@@ -240,12 +238,39 @@ section {
   margin-bottom: 20px;
 }
 
+.sez-john {
+  display: flex;
+  flex-direction: column;
+}
+
 .block-john {
   display: flex;
-  height: auto;
   margin-bottom: 30px;
   border: 1px solid white;
 }
+
+.album-john {
+  height: auto;
+  border: 1px solid white;
+  flex-basis: 16.7%;
+}
+
+.album-john img {
+  display: block;
+  width: 75%;
+  margin: 10px auto;
+}
+
+.album-john h4 {
+  color: white;
+  text-align: center;
+}
+
+
+/* regole Artisti più popolari */
+
+
+
 
 /* regole sezione player */
 footer {
