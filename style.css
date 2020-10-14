@@ -132,13 +132,16 @@ section {
 
 /* regole Upgrade */
 .upgrade {
+  position: fixed;
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   background-color: #080b12;
   opacity: 0.6;
   height: 100px;
-  width: 100vw;
-  padding-right: 5px;
+  width: calc(100% - 300px);
+  padding:0 5px 0 0;
 }
 
 .button {
