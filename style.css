@@ -273,10 +273,6 @@ section {
   margin-bottom: 30px;
 }
 
-/* .album {
-  border: 1px solid white;
-} */
-
 .album img {
   display: block;
   width: 75%;
@@ -533,4 +529,37 @@ footer {
 
 
 /* MEDIA QUERY */
-/*  */
+/* Large devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media all and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media all and (max-width: 575px) {
+  .menu {
+    width: 90px;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  #trademark {
+    display: none;
+  }
+
+  .list span {
+    display: none;
+  }
+
+}
