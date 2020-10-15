@@ -60,6 +60,7 @@ section {
 
 .list {
   display: flex;
+  border-left: 2px solid #000000;
   padding-bottom: 5px;
 }
 
@@ -72,6 +73,10 @@ section {
   font-size: 14px;
 }
 
+.home a:hover {
+  color: white;
+}
+
 .home img {
   width: 18%;
   margin-right: 10px;
@@ -82,9 +87,6 @@ section {
   border-left: 2px solid #5b7837;
 }
 
-.home a:hover {
-  color: white;
-}
 
 /* regole playlist */
 .playlist {
@@ -184,7 +186,6 @@ section {
 }
 
 
-
 /* regole blocco centrale */
 .section-center {
   display: flex;
@@ -235,6 +236,7 @@ section {
 }
 
 .navbar li {
+  height: 35px;
   color: #a3a3a3;
   display: inline-block;
   margin-right: 15px;
@@ -270,7 +272,12 @@ section {
 
 .block-album {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
+}
+
+.album {
+  flex-basis: calc(100% / 6);
 }
 
 .album img {
@@ -318,8 +325,7 @@ section {
 }
 
 .album-john {
-  height: auto;
-  flex-basis: 16.7%;
+  flex-basis: 16.5%;
 }
 
 .album-john img {
@@ -363,9 +369,7 @@ section {
 }
 
 .album-popular {
-  position: relative;
-  height: auto;
-  flex-basis: 16.7%;
+  flex-basis: 16.5%;
 }
 
 .album-popular img {
@@ -373,7 +377,6 @@ section {
   width: 75%;
   margin: 10px auto;
   border-radius: 50%;
-  backface-visibility: hidden;
 }
 
 .album-popular img:hover {
@@ -529,25 +532,117 @@ footer {
 
 
 /* MEDIA QUERY */
-/* Large devices (desktops, 992px and up) */
-@media all and (min-width: 992px) {
-
-}
-
 /* Medium devices (tablets, 768px and up) */
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Sezione menu navbar */
+  .list-navbar ul {
+    flex-basis: 80%;
+    flex-wrap: wrap;
+  }
 
+  /* sezione Recently played */
+  .album {
+    margin-bottom: 20px;
+    flex-basis: calc(100% / 4);
+  }
+
+
+  /* Sezione Creato per John Doe */
+  .album-john {
+    flex-basis: 25%;
+  }
+
+
+  /* Sezione Artisti più popolari */
+  .album-popular {
+    flex-basis: 25%;
+  }
 }
 
 /*  Small devices (landscape phones, 576px and up) */
-@media all and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* Sezione menu navbar */
+  .list-navbar ul {
+    flex-basis: 65%;
+    flex-wrap: wrap;
+  }
 
+
+  /* sezione Recently played */
+  .album {
+    margin-bottom: 20px;
+    flex-basis: calc(100% / 2);
+  }
+
+
+  /* Sezione Creato per John Doe */
+  .album-john {
+    flex-basis: 50%;
+  }
+
+
+  /* Sezione Artisti più popolari */
+  .album-popular {
+    flex-basis: 50%;
+  }
+
+
+  /* Sezione player blocco sinistra */
+  .sector-left {
+    flex-wrap: wrap;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media all and (max-width: 575px) {
+@media screen and (max-width: 575px) {
+  /* regole Upgrade */
+  .upgrade {
+    width: calc(100% - 60px);
+  }
+
+
+  /* Sezione menu navbar */
+  .list-navbar ul {
+    flex-basis: 80%;
+    flex-wrap: wrap;
+  }
+
+
+  /* sezione Recently played */
+  .album {
+    margin-bottom: 20px;
+    flex-basis: calc(100% / 2);
+  }
+
+
+  /* Sezione Creato per John Doe */
+  .album-john {
+    flex-basis: 50%;
+  }
+
+
+  /* Sezione Artisti più popolari */
+  .album-popular {
+    flex-basis: 50%;
+  }
+
+
+  /* Menù di sinistra */
   .menu {
-    width: 90px;
+    width: 60px;
+    padding: 5px 0;
+  }
+
+  .logo img {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+  .home img {
+    display: block;
+    width: 70%;
+    margin: 0 auto 40px auto;
   }
 
   .logo span {
@@ -562,4 +657,62 @@ footer {
     display: none;
   }
 
+  .playlist h4 {
+    display: none;
+  }
+
+  .playlist img {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+  .playlist span {
+    display: none;
+  }
+
+  .playlist ul {
+    display: none;
+  }
+
+
+  /* Installa app e autore del brano */
+  .download {
+    border-bottom: none;
+    padding: 5px 0;
+  }
+
+  .download img {
+    display: block;
+    width: 70%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .download h5 {
+    display: none;
+  }
+
+  .artist h5 {
+    display: none;
+  }
+
+  .artist img {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+
+  /* Sezione player blocco centrale */
+  .player img {
+    width: 6%;
+  }
+
+
+  /* Sezione player blocco di destra */
+  .sector-right img {
+    margin-right: 10px;
+    width: 10%;
+  }
 }
