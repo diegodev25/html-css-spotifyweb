@@ -277,6 +277,7 @@ section {
 }
 
 .album {
+  position: relative;
   flex-basis: calc(100% / 6);
 }
 
@@ -286,10 +287,33 @@ section {
   margin: auto;
 }
 
-.album img:hover {
+.overlay-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+}
+
+#back-play {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 32%;
+  transform: translate(-50%, -50%);
+  filter: invert(100%);
+}
+
+.album:hover {
   cursor: pointer;
-  background-color: #080b12;
-  opacity: 0.4;
+  opacity: 0.7;
+}
+
+.album:hover .overlay-play {
+  opacity: 1;
 }
 
 .album h4 {
@@ -325,7 +349,17 @@ section {
 }
 
 .album-john {
+  position: relative;
   flex-basis: 16.5%;
+}
+
+.album-john:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.album-john:hover .overlay-play {
+  opacity: 1;
 }
 
 .album-john img {
@@ -333,13 +367,6 @@ section {
   width: 75%;
   margin: 10px auto;
 }
-
-.album-john img:hover {
-  cursor: pointer;
-  background-color: #080b12;
-  opacity: 0.4;
-}
-
 
 .album-john h4 {
   color: white;
@@ -369,7 +396,17 @@ section {
 }
 
 .album-popular {
+  position: relative;
   flex-basis: 16.5%;
+}
+
+.album-popular:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.album-popular:hover .overlay-play {
+  opacity: 1;
 }
 
 .album-popular img {
@@ -377,12 +414,6 @@ section {
   width: 75%;
   margin: 10px auto;
   border-radius: 50%;
-}
-
-.album-popular img:hover {
-  cursor: pointer;
-  background-color: #080b12;
-  opacity: 0.4;
 }
 
 .album-popular h4 {
