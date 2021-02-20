@@ -244,7 +244,7 @@ section {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 125px;
 }
 
 #last-a {
@@ -659,11 +659,6 @@ footer {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575px) {
-  /* regole navbar */
-  .list-navbar > ul > a:nth-child(3) {
-    margin-right: 0;
-  }
-
   /* regole Upgrade */
   .upgrade {
     width: calc(100% - 60px);
